@@ -1,0 +1,45 @@
+# EFYV Games
+
+EFYV Games is the catalog and parent source-control boundary for EFYV game repositories. Each directory under [`games/`](games/README.md) owns its code, history, tests, automation, and detailed documentation as an independent Git repository.
+
+## Available Games
+
+| Game | Repository and documentation | Scope |
+| --- | --- | --- |
+| Labyrinth | [Open the Labyrinth system](games/labyrinth/README.md) | Unity game runtime, LabyMake designer, LabyBackend foundation, live-debug workflow, and verification suites |
+
+## Browse The Documentation
+
+Start with the level that matches the question:
+
+1. [Games catalog](games/README.md) lists the available game repositories.
+2. [Labyrinth system](games/labyrinth/README.md) explains how its three components work together.
+3. [LabyBackend](games/labyrinth/EFYV-labybackend/README.md), [LabyMake](games/labyrinth/EFYV-labymake/README.md), and [Labyrinth runtime](games/labyrinth/EFYV-labyrinth/README.md) document each component.
+4. Directory and leaf READMEs inside those components describe concrete files, invariants, tests, and extension points.
+
+## Repository Layout
+
+```text
+EFYV-games/                    parent Git repository
+|-- README.md                  game catalog entry point
+`-- games/
+    |-- README.md              available games
+    `-- labyrinth/             independent Labyrinth Git repository
+        |-- README.md          Labyrinth system map
+        |-- EFYV-labybackend/  shared runtime foundation
+        |-- EFYV-labymake/     asset designer and live debug
+        `-- EFYV-labyrinth/    Unity game and editor integration
+```
+
+## Git Boundaries
+
+The parent repository tracks this catalog and shared parent-level metadata. It deliberately ignores `games/*/` working trees so it cannot accidentally absorb or stage a nested game's files.
+
+Each game is versioned from its own directory. For example:
+
+```powershell
+git -C games/labyrinth status
+```
+
+Games can be registered as formal Git submodules after they have stable remote URLs and initial commits. Until then, they remain independent nested repositories on disk.
+

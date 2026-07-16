@@ -1,0 +1,12 @@
+# Each game owns an independent Git repository.
+/games/*/
+
+# Local operating-system and editor state.
+.DS_Store
+Thumbs.db
+.idea/
+.vs/
+.vscode/
+*.suo
+*.user
+
