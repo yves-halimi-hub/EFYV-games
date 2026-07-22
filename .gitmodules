@@ -1,0 +1,4 @@
+[submodule "games/labyrinth"]
+	path = games/labyrinth
+	url = https://github.com/yves-halimi-hub/labyrinth.git
+	branch = main

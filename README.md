@@ -33,13 +33,16 @@ EFYV-games/                    parent Git repository
 
 ## Git Boundaries
 
-The parent repository tracks this catalog and shared parent-level metadata. It deliberately ignores `games/*/` working trees so it cannot accidentally absorb or stage a nested game's files.
+The parent repository tracks this catalog and each game as a formal Git submodule. A fresh checkout can initialize every registered game with:
 
-Each game is versioned from its own directory. For example:
+```powershell
+git submodule update --init --recursive
+```
+
+Each game keeps its own history and is versioned from its own directory. For example:
 
 ```powershell
 git -C games/labyrinth status
 ```
 
-Games can be registered as formal Git submodules after they have stable remote URLs and initial commits. Until then, they remain independent nested repositories on disk.
-
+Commit and push game changes in the game repository first, then commit the updated submodule pointer in EFYV Games. The parent therefore records the exact game revision used by the catalog while preserving the game's independent repository boundary.

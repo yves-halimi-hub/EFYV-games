@@ -1,5 +1,4 @@
-# Each game owns an independent Git repository.
-/games/*/
+# Game repositories are registered as submodules in .gitmodules.
 
 # Local operating-system and editor state.
 .DS_Store
@@ -9,4 +8,3 @@ Thumbs.db
 .vscode/
 *.suo
 *.user
-
