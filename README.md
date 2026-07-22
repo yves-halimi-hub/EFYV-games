@@ -6,15 +6,15 @@ EFYV Games is the catalog and parent source-control boundary for EFYV game repos
 
 | Game | Repository and documentation | Scope |
 | --- | --- | --- |
-| Labyrinth | [Open the Labyrinth system](games/labyrinth/README.md) | Unity game runtime, LabyMake designer, LabyBackend foundation, live-debug workflow, and verification suites |
+| Labyrinth | [Open the Labyrinth system](https://github.com/yves-halimi-hub/labyrinth) | Unity game runtime, LabyMake designer, LabyBackend foundation, live-debug workflow, and verification suites |
 
 ## Browse The Documentation
 
 Start with the level that matches the question:
 
 1. [Games catalog](games/README.md) lists the available game repositories.
-2. [Labyrinth system](games/labyrinth/README.md) explains how its three components work together.
-3. [LabyBackend](games/labyrinth/EFYV-labybackend/README.md), [LabyMake](games/labyrinth/EFYV-labymake/README.md), and [Labyrinth runtime](games/labyrinth/EFYV-labyrinth/README.md) document each component.
+2. [Labyrinth system](https://github.com/yves-halimi-hub/labyrinth) explains how its three components work together.
+3. [LabyBackend](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labybackend), [LabyMake](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labymake), and [Labyrinth runtime](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labyrinth) document each component.
 4. Directory and leaf READMEs inside those components describe concrete files, invariants, tests, and extension points.
 
 ## Repository Layout

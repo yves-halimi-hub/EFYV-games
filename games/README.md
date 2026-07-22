@@ -8,7 +8,7 @@ This directory contains independently versioned EFYV games. Enter a game's READM
 
 | Directory | Documentation | Components |
 | --- | --- | --- |
-| `labyrinth/` | [Labyrinth system README](labyrinth/README.md) | [LabyBackend](labyrinth/EFYV-labybackend/README.md), [LabyMake](labyrinth/EFYV-labymake/README.md), and [Unity runtime](labyrinth/EFYV-labyrinth/README.md) |
+| `labyrinth/` | [Labyrinth system README](https://github.com/yves-halimi-hub/labyrinth) | [LabyBackend](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labybackend), [LabyMake](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labymake), and [Unity runtime](https://github.com/yves-halimi-hub/labyrinth/tree/main/EFYV-labyrinth) |
 
 ## Navigation Pattern
 
